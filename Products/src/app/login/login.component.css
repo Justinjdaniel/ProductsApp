@@ -1,0 +1,7 @@
+.regBox{
+    max-width: 450px;
+    margin: 10% 33%;
+    padding: 55px;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
