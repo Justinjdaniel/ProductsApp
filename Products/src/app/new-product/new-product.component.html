@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-header text-center display-3">
+        {{title}}
+    </div>
+    <div class="card-body">
+        <form class="was-validated">
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Product Id</h5></label>
+                <input type="number" class="form-control col-6" name="productId" [(ngModel)]="productItem.productId" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Product Id field: <b><i>[Number]</i></b></h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Product Name</h5></label>
+                <input type="text" class="form-control col-6" name="productName" [(ngModel)]="productItem.productName" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Product Name field</h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Product Code</h5></label>
+                <input type="text" class="form-control col-6" name="productCode" [(ngModel)]="productItem.productCode" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Product Code field</h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Release Date</h5></label>
+                <input type="text" class="form-control col-6" name="releaseDate" [(ngModel)]="productItem.releaseDate" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Release Date field</h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Description</h5></label>
+                <input type="text" class="form-control col-6" name="description" [(ngModel)]="productItem.description" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Release Date field</h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Price</h5></label>
+                <input type="text" class="form-control col-6" name="price" [(ngModel)]="productItem.price" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Price field: <b><i>[Number]</i></b></h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>5 Star Rating</h5></label>
+                <input type="text" class="form-control col-6" name="starRating" [(ngModel)]="productItem.starRating" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Star Rating field: <b><i>[Number]</i></b></h6></div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-3"><h5>Product Image Url</h5></label>
+                <input type="text" class="form-control col-6" name="imageUrl" [(ngModel)]="productItem.imageUrl" required>
+                <div class="invalid-feedback col-3"><h6>Please fill Product Image Url field: <b><i>[Url]</i></b></h6></div>
+            </div>
+            <button type="submit" class="btn-lg btn-primary mx-auto btn-block col-3" (click)="AddProduct()"><h3>Add Product</h3></button>
+        </form>
+    </div>
+</div>

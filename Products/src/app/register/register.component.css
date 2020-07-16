@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+
+.regBox{
+    max-width: 450px;
+    margin: 7% 33%;
+    padding: 55px;
+    border: 2px solid grey;
+    border-radius: 7px;
+}
+input:focus{
+    transform: scale(1.1);
+    border: 2px solid blue;
+}
+input:hover{
+    border: 2px solid rgb(84, 209, 188);
+}
+.display-4:hover{
+    color: rgb(8, 253, 159);
+    cursor: default;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+label, button{
+    font-family: 'Montserrat', sans-serif;
+}
+/* .display-4:hover::after{
+    content: '↓';
+    text-transform: capitalize;
+}
+.display-4:hover::before{
+    content: '↓';
+    text-transform: capitalize;
+} */
+.col-md:hover{
+    color: blue;
+    transform: scale(1.1);
+}

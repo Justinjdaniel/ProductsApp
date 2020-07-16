@@ -1,0 +1,42 @@
+
+<div class="card">
+    <div class="card-header text-center display-3 font-weight-bold">
+        {{title}}
+    </div>
+    <div class="card-body">
+        <div class="table-resposive table-hover">
+            <table class="table">
+                <thead>
+                    <tr  class="text-center">
+                        <th>
+                            <button class="btn btn-primary font-weight-bold" (click)='toggleImage()'>
+                                {{showImage? 'Hide': 'Show'}} Image
+                            </button>
+                        </th>
+                        <th class="align-middle">Product Name</th>
+                        <th class="align-middle">Product Code</th>
+                        <th class="align-middle">Available From</th>
+                        <th class="align-middle">Price</th>
+                        <th class="align-middle">5 Star Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let product of products'>
+                        <td>
+                            <img *ngIf='showImage'
+                            [src] = 'product.imageUrl'
+                            [title] = 'product.productName'
+                            [style.width.px] = 'imageWidth'
+                            [style.margin.px] = 'imageMargin'>
+                        </td>
+                        <td class="align-middle">{{product.productName}}</td>
+                        <td class="align-middle">{{product.productCode}}</td>
+                        <td class="align-middle">{{product.releaseDate}}</td>
+                        <td class="align-middle text-center">{{product.price}}</td>
+                        <td class="align-middle text-center">{{product.starRating}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
